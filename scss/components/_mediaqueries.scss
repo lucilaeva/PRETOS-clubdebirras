@@ -1,0 +1,423 @@
+@media screen and (min-width:1024px) {
+
+
+    .body-principal{
+        height: 100%;
+        // background: linear-gradient( to bottom, #6079B8, #4f8317);
+        // background-repeat: no-repeat;
+    }
+
+// inicio contenedor header pagina principal vista mobile 
+ 
+
+    .header-inicio {
+        margin: 2rem;
+        justify-content: center;
+        .container-fluid {
+            flex-direction: column;
+            .logo-container {
+                @include medidas (8rem, 4rem);
+            }
+        }
+        .listado {
+            .nav-item {
+                margin: 2rem;
+                margin-bottom: 0rem;
+                justify-content: center;
+                align-items: center;
+                border-radius: 200px 0px 200px 0px;
+                -moz-border-radius: 200px 0px 200px 0px;
+                -webkit-border-radius: 200px 0px 200px 0px;
+                border: 0px solid #000000;
+                .nav-link{
+                    font-size: 1.1rem;
+                    line-height: 2rem;
+                }
+                .nav-link:hover{
+                    transform: scale(1.2);
+                }   
+                .dropdown-menu {
+                    background-color: $color-secundario;
+                    border-radius: 50px;
+                    .dropdown-item {
+                        justify-content: start;
+                        align-items: start;
+                        font-size: 1rem;
+                        line-height: 0.7rem;
+                    }    
+                }
+            }
+        }
+    }
+
+    // inicio contenedor main pagina principal vista mobile
+
+    .inicio{
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        grid-template-areas: "int-titulo texto-boton";
+        .int-titulo {
+            grid-area: int-titulo;
+            @include medidas (105vh, 70vw);
+            margin: 2rem;
+            margin-right: 0rem;
+            border-radius: 58px 0px 0px 58px;
+            -moz-border-radius: 58px 0px 0px 58px;
+            -webkit-border-radius: 58px 0px 0px 58px;
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+            grid-template-areas: 
+                        "interaccion titulo" ;
+            .interaccion{
+                grid-area: interaccion;
+                justify-content: center;
+                align-items: start;
+                padding: 1rem;
+                .interaccion-img {
+                    @include medidas (2.5rem, 2.5rem);
+                    margin: 0.5rem;
+                }
+            }
+            .titulo {
+                grid-area: titulo;
+                font-size: 4rem;
+                transform: rotate(270deg);
+                justify-self: center;
+                align-self: center;
+                height: 27.5rem;   
+            }
+        }
+        .texto-boton{
+            grid-area: texto-boton;
+            height: 70vw;
+            margin: 2rem;
+            margin-left: 0rem;
+            border-radius: 0px 58px 58px 0px;
+            -moz-border-radius: 0px 58px 58px 0px;
+            -webkit-border-radius: 0px 58px 58px 0px;
+            .texto{
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                border-top: none;
+                border-left: 0.3rem solid $color-secundario;
+                text-align: start;
+                display: flex;
+                width: 17rem;
+                margin-top: 4rem;
+                padding: 2rem 3rem;  
+            }
+            .boton{
+                grid-area: boton;
+                @include medidas (12rem, 2.5rem) 
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                margin: 2rem;
+                a {
+                    font-size: 1.1rem;
+                    padding: 0.2rem;
+                }
+            }
+        }
+    }
+
+// inicio contenedor footer pagina principal vista mobile
+
+.footer-inicio{
+    margin: 3.5rem;
+    .div-footer-ini {
+        h2 {
+            font-size: 0.9rem;
+            margin: 1rem;   
+        }
+        h3 {
+            font-size: 0.8rem;
+            margin-bottom: 1.2rem; 
+            }
+    } 
+}
+    
+    .div2-inicio {
+        margin: 1.2rem;
+        h4 {
+          font-size: 0.8rem;  
+        }
+        
+    }
+
+    .div4-inicio {
+        display: none;
+    }
+
+}
+
+
+// incio estilos pagina nosotros vista mobile
+
+@media screen and (min-width:1024px) {
+
+    .header-paginas {
+        justify-content: start;
+        .paginas {
+            width: 100%;
+            flex-direction: row;
+        }
+        .lista {
+            .nav-item {
+                margin-left: 1rem;
+                .nav-link {
+                   font-size: 1.1rem; 
+                }
+                .dropdown-menu {
+                   .dropdown-item {
+                    display: block;
+                    text-align: start;
+                    font-size: 1rem;
+                    line-height: 0.6rem;
+                    }   
+                }    
+            }
+        }
+    }
+
+// estilos contenedor main   
+
+    .nosotros {
+        .titulo-nosotros {
+            font-size: 4rem;
+        }    
+        .nosotros-sec {
+            background-color: $color-secundario;
+            height: 15rem;
+            .somos {
+                display: grid;
+                justify-content: center;
+                align-items: start;
+                grid-template-columns: 3fr 7fr;
+                grid-template-areas: "nosotros-text foto-nosotros";
+                .nosotros-text {
+                    grid-area: nosotros-text;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-cuarto;
+                    margin: 2rem 3rem;
+                    margin-right: 0rem;
+                    @include medidas (48vh, 51vw);
+                    padding: 2rem 3.5rem 2rem 2rem;
+                    text-align: right;
+                    font-size: 1.1rem;
+                }
+                .foto-nosotros {
+                    grid-area: foto-nosotros;
+                    margin: 2rem 5rem;
+                    margin-left: 0rem;
+                    @include medidas (70vh, 51vw);
+                }
+            }
+            .abrimos {
+                height: 25rem;
+                h2 {
+                font-size: 3.5rem;
+                margin-top: 3rem;
+                }
+                .div-abrimos {
+                    display: grid;
+                    margin: 5rem;
+                    grid-template-columns: 2fr 1fr;
+                    grid-area: "video texto-video";
+                    .video {
+                        margin: 0rem;
+                        grid-area: video;
+                        .video-pretos {
+                            @include medidas (80vh, 50vw);
+                        }
+                    }
+                    .texto-video {
+                        grid-area: texto-video;
+                        background-color: $color-terciario;
+                        color: $color-principal;
+                        @include medidas (48vh, 50vw);
+                        margin-left: 30rem;
+                        margin-top: 0rem;
+                        padding: 3rem 2rem 2rem 3.5rem;
+                        font-size: 1.1rem;
+                        text-align: start;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                } 
+            }
+        }
+    }
+
+
+    // estilos contenedor footer 
+
+    .footer {
+        margin-top: 80rem;
+        padding: 3rem;
+        height: 25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        grid-template-areas: "div-footer div4"
+                            "div2 div4";
+        .div-footer {
+            grid-area: div-footer;
+            text-align: center;
+            h2 {
+                text-align: center;
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem; 
+                margin-top: 4.5rem;
+
+            }
+            h3 {
+                font-size: 0.8rem;
+                margin-bottom: 1.5rem; 
+                }
+        } 
+        .div2{
+            grid-area: div2;
+            text-align: center;
+            margin-bottom: 2rem;
+            h4 {
+              font-size: 0.8rem;  
+            }
+        }
+    
+        .div4 {
+            grid-area: div4;
+            a img {
+              @include medidas (67vh, 24vw);
+              padding-left: 2rem;  
+            }
+        }
+    }
+}
+
+// inicio contenedor main pagina principal vista mobile
+
+@media screen and (min-width:1024px) {
+
+    .header-servicios {
+        justify-content: end;
+        .paginas {
+            width: 100%;
+            flex-direction: row;
+        }
+        .lista {
+            .nav-item {
+                margin-left: 1rem;
+                .nav-link {
+                   font-size: 1.1rem; 
+                }
+                .dropdown-menu {
+                   .dropdown-item {
+                    display: block;
+                    text-align: start;
+                    font-size: 1rem;
+                    line-height: 0.6rem;
+                    }   
+                }    
+            }
+        }
+    }
+
+    .main-servicios {
+        .nuestros-servicios {
+            font-size: 4rem;
+            width: 100%;
+        }
+        .sec-servicios {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "club-servicios bar-servicios eventos-servicios";
+            .contenedor-azul {
+                .club-servicios {
+                grid-area: club-servicios;
+                @include medidas (20rem, 75rem);
+                    .club {
+                        justify-content: start;
+                        align-items: start;
+                        .club-img {
+                        @include medidas (20rem, 20rem);
+                        padding: 1rem;
+                        }
+                        .h2-uno {
+                            font-size: 3rem;
+                        }
+                        .contenedor-uno {
+                            margin: 1rem;
+                            padding: 1.5rem;
+                            .p-uno {
+                                font-size: 2rem;  
+                            }   
+                        }
+
+                    }
+                }
+            }
+            .contedor-amarillo {
+                display: flex;
+                flex-direction: row;
+                .bar-servicios {
+                grid-area: bar-servicios;
+                @include medidas (20rem, 75rem);
+
+            }
+            .eventos-servicios {
+                grid-area: eventos-servicios;
+                @include medidas (20rem, 75rem);
+            }           
+        }
+            }
+            
+        
+    }
+
+    .footer-servicios {
+        margin-top: 80rem;
+        padding: 3rem;
+        height: 25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        grid-template-areas: "div-footer div4"
+                            "div2 div4";
+        .div-footer {
+            grid-area: div-footer;
+            text-align: center;
+            h2 {
+                text-align: center;
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem; 
+                margin-top: 4.5rem;
+
+            }
+            h3 {
+                font-size: 0.8rem;
+                margin-bottom: 1.5rem; 
+                }
+        } 
+        .div2{
+            grid-area: div2;
+            text-align: center;
+            margin-bottom: 2rem;
+            h4 {
+              font-size: 0.8rem;  
+            }
+        }
+    
+        .div4 {
+            grid-area: div4;
+            a img {
+              @include medidas (67vh, 24vw);
+              padding-left: 2rem;  
+            }
+        }
+    }
+
+
+
+}

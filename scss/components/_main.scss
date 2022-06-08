@@ -1,0 +1,349 @@
+.inicio {
+    .int-titulo {
+       margin: 1rem;
+       margin-bottom: 0rem;
+       height: 23rem;
+       background-image: url(../img/IMGPRESENTACION.jpg);
+       background-position: cover;
+       -webkit-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        -moz-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        border-radius: 58px 0px 0px 0px;
+        -moz-border-radius: 58px 0px 0px 0px;
+        -webkit-border-radius: 58px 0px 0px 0px;
+        border: 0px solid #000000;
+       .interaccion {
+           display: flex;
+           flex-direction: column;
+           justify-content: end;
+           align-items: end;
+           padding: 1rem 0.5rem;
+           .interaccion-img {
+               @include medidas (1.5rem, 1.5rem);
+               margin: 0.2rem;
+               -webkit-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+                -moz-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+                box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+                border-radius: 200px 61px 61px 200px;
+                -moz-border-radius: 200px 61px 61px 200px;
+                -webkit-border-radius: 200px 61px 61px 200px;
+                border: 0px solid #000000;
+           }
+       }
+       .titulo {
+           font-family: $letra-textos;
+           font-size: 3rem;
+           height: 15.6rem;
+           color: $color-secundario;
+           display: flex;
+           align-items: end;
+           justify-content: center;
+           text-shadow: 5px 5px  5px $color-cuarto;
+       }
+    }
+    
+    .texto-boton {
+        background-color: $color-cuarto;
+        margin: 0rem 1rem;
+        padding: 1rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        -moz-box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        box-shadow: 10px 10px 94px 22px rgba(0,0,0,0.48);
+        border-radius: 0px 0px 58px 0px;
+        -moz-border-radius: 0px 0px 58px 0px;
+        -webkit-border-radius: 0px 0px 58px 0px;
+        border: 0px solid #000000;   
+        .texto {
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.4rem;
+            border-top: 0.2rem solid $color-secundario;
+            width: 23rem;
+            color: $color-secundario;
+            text-transform: uppercase;
+        }
+        .boton{
+            margin: 1rem;
+            @include medidas (9rem, 5rem);
+            @extend %botones;
+            a {
+                text-decoration: none;
+                color: $color-secundario;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 0.4rem;
+            }
+        }
+    }
+}
+
+
+.nosotros {
+    background-color: $color-secundario;
+    .titulo-nosotros {
+        color: $color-terciario;
+        font-family: $letra-titulos;
+        text-align: center;
+        font-size: 3rem;
+        padding: 1.5rem;
+    }
+    .nosotros-sec {
+        background-color: $color-terciario;
+        height: 30rem;
+        .somos {
+            padding: 2rem;
+            .nosotros-text{
+                color: $color-principal;
+                text-align: center;
+                font-size: 1.1rem;
+                padding: 1rem;
+            }
+            .foto-nosotros {
+                margin-top: 1.5rem;
+                @include medidas (63vh, 60vw);
+            }
+        }
+        .abrimos {
+            height: 18rem;
+            background-color: $color-cuarto;
+            padding: 1rem 0rem;
+            margin: 1.5rem 0rem;
+            h2 {
+                text-align: center;
+                color: $color-secundario;
+                font-family: $letra-titulos;
+                font-size: 2.4rem;
+                margin: 2rem;
+                margin-bottom: 6rem;
+            }
+            .div-abrimos{
+                .video {
+                    margin: 0.3rem;
+                    .video-pretos {
+                        @include medidas (70vh, 55vw);
+                    }
+                }
+                .texto-video {
+                    text-align: center;
+                    color: $color-cuarto;
+                    font-size: 1.1rem;
+                    padding: 1rem;
+                    margin-top: 2rem;
+                }
+            }
+        }  
+    }    
+}
+
+.main-servicios {
+    background-color: $color-terciario;
+    .nuestros-servicios {
+        background-color: $color-terciario;
+        color: $color-principal;
+        font-size: 3rem;
+        font-family: $letra-titulos;
+        text-align: center;
+        padding: 3rem;
+    }
+    .sec-servicios {
+        display: flex;
+        flex-direction: column;
+        .contenedor-azul {
+            background-color: $color-terciario;
+            .club-servicios {
+                background-color: $color-principal;
+                @include medidas (60vh, 215vw);
+                margin: 3rem;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .club {
+                    justify-content: center;
+                    align-items: center;
+                    .club-img {
+                    @include medidas (50vh, 50vw);
+                    border-radius: 2rem;
+                    padding: 1rem;
+                    }
+                }
+                .h2-uno {
+                    text-align: center;
+                    margin: 1rem;
+                    padding: 1rem;
+                    a {
+                        font-size: 2rem;
+                        text-decoration: none;
+                        color: $color-cuarto;
+                        padding: 6rem;
+                        padding-bottom: 1.2rem;
+                        border-bottom: 0.3rem solid $color-cuarto;
+                    }
+                }  
+                .contenedor-uno {
+                    margin: 1rem;
+                    padding: 1.5rem;
+                    text-align: center;
+                    justify-content: center;
+                    .p-uno {
+                        color: $color-cuarto;
+                        font-size: 1.1rem;
+                        justify-content: center;
+                        align-items: center;
+                    }   
+                }
+            }
+        }
+        .contenedor-amarillo {
+            background-color: $color-secundario;
+            .bar-servicios {
+                background-color: $color-principal;
+                @include medidas (60vh, 180vw);
+                margin: 3rem;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .h2-dos {
+                    text-align: center;
+                    margin: 1rem;
+                    padding: 1rem;
+                    a {
+                        font-size: 2rem;
+                        text-decoration: none;
+                        color: $color-cuarto;
+                        padding: 6rem;
+                        padding-bottom: 1.2rem;
+                        border-bottom: 0.3rem solid $color-cuarto;
+                    }
+                }
+                .contenedor-dos {
+                    margin: 1rem;
+                    padding: 1.5rem;
+                    text-align: center;
+                    justify-content: center;
+                    .p-dos {
+                        color: $color-cuarto;
+                        font-size: 1.1rem;
+                        justify-content: center;
+                        align-items: center;
+                    } 
+                }
+                .bar {
+                    align-items: center;
+                    justify-content: center;
+                    align-items: center;
+                    .bar-img {
+                    @include medidas (50vh, 50vw);
+                    border-radius: 2rem;
+                    padding: 1rem;
+                    }
+
+                }
+            }
+            .eventos-servicios {
+                background-color: $color-principal;
+                @include medidas (60vh, 150vw);
+                margin: 3rem;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .eventos {
+                    align-items: center;
+                    justify-content: center;
+                    align-items: center;
+                    .eventos-img {
+                        @include medidas (50vh, 50vw);
+                        border-radius: 2rem;
+                        padding: 1rem;
+                        }
+                }
+            }
+            .h2-tres {
+                text-align: center;
+                margin: 1rem;
+                padding: 1rem;
+                a {
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: $color-cuarto;
+                    padding: 6rem;
+                    padding-bottom: 1.2rem;
+                    border-bottom: 0.3rem solid $color-cuarto;
+                }
+            }
+            .contenedor-tres {
+                margin: 1rem;
+                padding: 1.5rem;
+                text-align: center;
+                justify-content: center;
+                .p-tres {
+                    color: $color-cuarto;
+                    font-size: 1.1rem;
+                    justify-content: center;
+                    align-items: center;
+                }   
+            } 
+        }
+    }
+    .boton-sec {
+        background-color: $color-secundario;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contactanos {
+            margin-bottom: 4rem;
+            @include medidas (12rem, 4.2rem);
+            @extend %botones;
+            a {
+                text-decoration: none;
+                color: $color-secundario;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 0.4rem;
+            }
+        }       
+    }     
+}
+
+.galeria-fotos {
+    background-color: $color-secundario;
+    .titulo-galeria {
+        font-size: 3rem;
+        color: $color-cuarto;
+        text-align: center;
+        margin: 3rem;
+        font-family: $letra-titulos;
+        padding: 2rem;
+    }
+    .c-galeria {
+        display: flex;
+      .club-galeria a {
+          text-decoration: none;
+          color: $color-terciario;
+          font-size: 2rem;
+          transform: rotate(270deg);
+          .foto-club {
+              .img-club {
+                  @include medidas (10rem, 10rem)
+              }
+          }
+
+      }  
+    }
+
+}
+
+
+
+    
